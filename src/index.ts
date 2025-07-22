@@ -1,12 +1,14 @@
 import { flutterwave } from "./apps/flutterwave"
 import { paystack } from "./apps/paystack"
 
-const createIntegrations = async () => {
-    console.log("Add flutterwave");
-    await flutterwave()
-
-    console.log("Add Paystack")
-    await paystack()
-}
-
-createIntegrations();
+(async () => {
+    try {
+        // Initialize Paystack integration
+        await paystack();
+        console.log("Paystack integration initialized successfully.");
+        await flutterwave();
+        console.log("Flutterwave integration initialized successfully.");
+    } catch (error) {
+        console.error("Error initializing payment integrations:", error);
+    }
+})

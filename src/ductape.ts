@@ -1,4 +1,4 @@
-import Ductape from '../../../Ductape/ductape-sdk/ts/dist';
+import Ductape from '@ductape/sdk';
 import { config } from 'dotenv';
 
 config();

@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@ductape/sdk": "^0.0.4-v14-fe",
     "dotenv": "^17.2.0"
   },
   "devDependencies": {
